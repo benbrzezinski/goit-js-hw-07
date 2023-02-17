@@ -21,6 +21,7 @@ const galleryTags = galleryItems
 gallery.insertAdjacentHTML("afterbegin", galleryTags);
 
 const onGalleryImgClick = (e) => {
+  e.preventDefault();
   if (e.target.nodeName !== "IMG") {
     return;
   }
